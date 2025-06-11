@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main() 
+void main() 
 {
 	int no = 100;
 	int temp = no, digit, sum = 0,i, fact;
@@ -10,10 +10,10 @@ int main()
 		fact = 1;
 		for(i = 1; i <= digit; i++) 
 		{
-			fact *= i;
+			fact =fact * i;
 		}
-		sum += fact;
-		temp /= 10;
+		sum =sum + fact;
+		temp =temp / 10;
 	}
 	if(sum == no)
 		printf("%d is a strong number.\n",no);
