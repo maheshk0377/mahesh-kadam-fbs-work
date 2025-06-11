@@ -6,7 +6,7 @@ void main()
 	int i = 1;
 	while ( i <= number)
 	{
-		factorial *= i;
+		factorial =factorial * i;
 		i++;
 	}
 	printf("The factorial of %d is %d\n",number,factorial);
