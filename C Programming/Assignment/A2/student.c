@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main()
+void main()
 {
 	float price,tprice,discount =0;
 	char isstudent;
