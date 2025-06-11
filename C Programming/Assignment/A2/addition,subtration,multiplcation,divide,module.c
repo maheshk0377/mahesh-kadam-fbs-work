@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main()
+void main()
 {
 	int num1,num2;
 	char op;
