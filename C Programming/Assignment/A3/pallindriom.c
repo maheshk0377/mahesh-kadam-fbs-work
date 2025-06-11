@@ -8,7 +8,7 @@ void main()
 	while ( number != 0) {
 		remainder = number % 10;
 		revno = revno * 10 + remainder;
-		number /= 10;
+		number =number / 10;
 	}
 	if( orgno == revno)
 	{
