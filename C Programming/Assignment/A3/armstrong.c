@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <math.h>
 
-int main() {
+void main() {
     int n = 153;
     int original = n;
     int sum = 0;
@@ -10,12 +9,12 @@ int main() {
 
     while (temp != 0) {
         digits++;
-        temp /= 10;
+        temp = temp / 10;
     }
     while (n != 0) {
         int digit = n % 10;
-        sum += (int)pow(digit, digits);
-        n /= 10;
+        sum =sum + (int)pow(digit, digits);
+        n =n / 10;
     }
     if (sum == original) {
         printf("%d is an Armstrong number.\n", original);
