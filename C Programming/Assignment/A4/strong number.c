@@ -15,10 +15,10 @@ void main()
 			fact = 1;
 			for(j = 1; j <= digit; j++)
 			{
-				fact *= j;
+				fact =fact * j;
 			}
-			sum += fact;
-			temp /= 10;
+			sum =sum + fact;
+			temp =temp / 10;
 		}
 		if( sum == i)
 		{
