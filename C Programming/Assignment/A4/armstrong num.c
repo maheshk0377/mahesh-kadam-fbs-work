@@ -1,23 +1,29 @@
 #include<stdio.h>
 void main()
 {
-	int n, i, sum,j;
-	printf("Enter a number: ");
-	scanf("%d", &n);
-	printf("Perfect numbers between 1 and %d are: \n",n);
-	for(i = 1; i<= n;i++)
+	int n;
+	printf("Enter the value of n: ");
+	scanf("%d",&n);
+	printf("Armstrong numbers from 1 to %d are:\n",n);
+	for(int i = 1;i <= n;i++)
 	{
-		sum = 0;
-		for(j = 1; j < i; j++)
+		int num = i, sum = 0,digits = 0,temp;
+		temp = num;
+		while(temp > 0)
 		{
-			if(i %j == 0)
-			{
-				sum =sum + j;
-			}
+			digits++;
+			temp= temp / 10;
 		}
-		if (sum == i)
+		temp = num;
+		while(temp > 0)
 		{
-			printf("%d\n",i);
+			int digit = temp % 10;
+			sum = sum + digit * digit * digit;
+			temp = temp / 10;
 		}
-		}	
+		if (sum == num)
+		{
+			printf("%d",num);
+		}
+	}
 }
