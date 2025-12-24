@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2 class="title">College Notes Link</h2>
+
+<!-- Show notes here -->
+<div id="notesList"></div>
+
+<button id="adminBtn" onclick="loginAdmin()">Admin Login</button>
+
+<!-- Upload box -->
+<div id="uploadBox" style="display:none">
+    <input type="file" id="fileUpload" accept="application/pdf">
+    <button onclick="uploadNote()">Upload PDF</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
